@@ -1,0 +1,104 @@
+/*
+==========================================
+    RHX Post Grid Css
+==========================================
+*/
+.product .product-description {
+    position: relative;
+    z-index: 15;
+    background: #fff;
+}
+
+.product .product-description .info {
+    padding: 15px 15px 0;
+    color: #aaa;
+    font-size: 0.85em;
+    width: 100%;
+}
+.product .product-description .price {
+    width: 100%;
+    color: #9bb6aa;
+    font-size: 1.5em;
+    position: relative;
+}
+.product .product-description .info h1 {
+    font-size: 20px;
+    margin: 0 0 5px;
+    text-align: center;
+}
+
+.product .product-description:after, main[role=main]:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.price span {
+    padding: 0 15px 15px;
+    width: 50%;
+}
+span.value {
+    text-align: end;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+}
+span.price-title {
+    margin-top: 16px;
+    float: left;
+}
+
+
+
+/*
+* Next Previous Button CSS
+*/
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-25%);
+}
+
+.owl-prev {
+  left: -2rem;
+}
+
+.owl-next {
+  right: -2rem;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    font-size: 50px!important;
+    color: #000!important;
+    background: #cecece!important;
+}
+
+.woocommerce a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button, .woocommerce-cart table.cart td.actions .button, .woocommerce form.checkout_coupon .button, .woocommerce #respond input#submit, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link{
+    background: #9bb6aa;
+}
+
+p.product.woocommerce.add_to_cart_inline {
+    border: 0!important;
+}
+
+figure.thumb-figure{
+    overflow: hidden;
+}
+bdi {
+    padding-right: 10px;
+}
+.woocommerce a.added_to_cart {
+    color: #000;
+}
+
+/* Brightness-zoom Container */
+.owl-carousel .owl-item img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(70%);
+}
+
+/* The Transformation */
+.owl-carousel .owl-item img:hover {
+  filter: brightness(100%);
+  transform: scale(1.3);
+}
